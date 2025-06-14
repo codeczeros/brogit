@@ -11,6 +11,10 @@ class FuncTestCase(unittest.TestCase):
     def test_add3(self):
         self.assertEqual(add(1, 4), 5)
 
+class FailFuncTestCase(unittest.TestCase):    
+    def fail_test_add3(self):
+        self.assertEqual(add(1, 4), 4)
+
 
 if __name__ == "__main__":
     unittest.main()
